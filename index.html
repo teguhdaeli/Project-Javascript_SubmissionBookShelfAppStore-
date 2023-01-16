@@ -1,0 +1,85 @@
+<!---
+  Author  : Teguh Christianto Daeli
+  Email   : daeliteguh@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+  <!--Link Bootsra-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+<body>
+  <header>
+    <header class="head_bar">
+      <h2 class="head_bar__title">Bookshelf Apps</h2>
+    </header>
+  </header>
+
+  <!------>
+  <main>
+    <!--membuat inputan tambah buku-->
+    <section class="input_section card" >
+      <!--form tambah buku baru bootstrap-->
+        <div class="card-header">
+          <h3 style="text-align: center;">Masukkan Buku Baru</h3>
+        </div>
+      <form class="form-inline">
+        <!--create header title on form-->
+        
+        <div class="input">
+          <label for="inputBookTitle">Judul</label>
+          <input class="form-control" id="title" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookAuthor">Penulis</label>
+          <input class="form-control" id="author" type="text" required>
+        </div>
+        <div class="input">
+          <label for="inputBookYear">Tahun</label>
+          <input class="form-control" id="year" type="number" required>
+        </div>
+        <div class="input_inline">
+          <label for="inputBookIsComplete">Selesai dibaca</label>
+          <input id="isComplete" type="checkbox">
+        </div>
+        <button type="submit">Masukkan Buku ke rak</button>
+    </section>
+    <!--Form Hasil Buku Yang Belum Dibaca-->
+    <section class="book_shelf card">
+      <div class="card-header" style="margin-bottom:8px">
+          <h3 style="text-align: center;">Belum Selesai Dibaca</h3>
+      </div>
+    <div id="incompleteBookshelfList" class="list-buku">
+
+    </div>
+    </section>
+    <!--Form Hasil Buku Yang Sudah Dibaca-->
+    <section class="book_shelf card">
+      <div class="card-header" style="margin-bottom:8px">
+        <h3 style="text-align: center;">Selesai Dibaca</h3>
+    </div>
+      <div id="completeBookshelfList" class="list-buku">
+
+      </div>
+    </section>
+
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </main>
+</body>
+</html>
+<!---
+  Author  : Teguh Christianto Daeli
+  Email   : daeliteguh@gmail.com
+-->
